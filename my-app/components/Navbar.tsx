@@ -6,10 +6,8 @@ import Button from './Button';
 
 const Navbar = () => {
     return (
-        <nav className="max-w-[1400px] flexCenterBetween mx-auto py-5 padding-container"> 
-            <div className="">
-                <Image src="/hilink-logo.svg" alt="logo" width={80} height={80} />
-            </div>
+        <nav className="max-w-[1400px] flexCenterBetween mx-auto py-5 padding-container transition-all z-30"> 
+            <Image src="/hilink-logo.svg" alt="logo" width={80} height={80} />
             <div className="hidden lg:flex gap-8">
                 {NAV_LINKS.map((item:[]|any) => (
                     <div className="text-gray" key={item.key}>

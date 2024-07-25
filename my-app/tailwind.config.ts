@@ -31,6 +31,9 @@ const config: Config = {
           50: '#FEC601',
         },   
       },
+      backgroundImage: {  
+        'bg-img-map': "url('/pattern-bg.png')",
+      },
     },
   },
 };

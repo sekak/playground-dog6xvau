@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
 
 @layer utilities {
   .padding-container {
-    @apply px-6 lg:px-20 xl:px-32;
+    @apply px-6;
   };
 
   .flexCenterBetween {
@@ -41,7 +42,7 @@ body {
     @apply text-[18px] font-[400];
   };
   .regular-18 {
-    @apply text-[18px] font-[500];
+    @apply text-[18px] font-[600];
   };
   .regular-20 {
     @apply text-[20px] font-[400];
@@ -55,4 +56,16 @@ body {
   .regular-32 {
     @apply text-[32px] font-[400];
   };
+
+  .btn-green-white{
+    @apply border-white bg-green-50 rounded-[30px] px-8 py-4 text-white regular-18;
+  };
+
+  .btn-transparent-black{
+    @apply px-8 py-4 text-black regular-18;
+  };
+
+  .bg-img-0{
+    @apply  md:right-0 w-screen h-screen absolute bg-cover bg-center  z-10;
+  }
 }
