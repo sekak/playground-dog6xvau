@@ -9,16 +9,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 body {
   font-family: Inter;
+
 }
 
 @layer utilities {
   .padding-container {
-    @apply px-6;
+    @apply xl:px-6 lg:px-12 md:px-20 px-8;
   };
 
   .flexCenterBetween {
@@ -68,4 +68,16 @@ body {
   .bg-img-0{
     @apply  md:right-0 w-screen h-screen absolute bg-cover bg-center  z-10;
   }
+}
+
+.show-scrollbar::-webkit-scrollbar{
+  display: none;
+}
+
+.cards{
+  pointer-events: none;
+}
+
+.disable-select{
+  user-select: none;
 }

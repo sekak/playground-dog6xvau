@@ -1,13 +1,15 @@
 import React from 'react';
 import LandingPage from './LandingPage';
+import Camp from './Camp';
+import Guide from './Guide';
 
 const Hero = () => {
     return (
-        <div className='relative'>
+        <div className='relative overflow-hidden'>
              <LandingPage /> 
-             {/* <Camp />
+              <Camp />
              <Guide />
-             <Features />
+             {/*<Features />
              <Getapp /> */}
         </div>
     );
